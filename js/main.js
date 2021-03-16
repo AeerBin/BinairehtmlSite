@@ -31,26 +31,25 @@ links.forEach((link) => {
   });
 });
 
-const site = document.querySelector(".lisite");
-const application = document.querySelector(".liapplication");
-const design = document.querySelector(".lidesign");
-const marketingdigital = document.querySelector(".limarketing");
+const site = document.querySelector(".site");
+const application = document.querySelector(".application");
+const design = document.querySelector(".design");
+const marketingdigital = document.querySelector(".marketing");
 
-const sites = document.querySelectorAll(".site");
-const applications = document.querySelectorAll(".application");
-const designs = document.querySelectorAll(".design");
-const marketings = document.querySelectorAll(".marketingdigital");
+const sites = document.querySelector(".siteRow");
+const applications = document.querySelector(".appRow");
+const designs = document.querySelector(".designRow");
+const marketings = document.querySelector(".markRow");
 // =>
-// sites.classList.add("hide-pack");
-applications.forEach((item) => (item.style.display = "none"));
-designs.forEach((item) => (item.style.display = "none"));
-marketings.forEach((item) => (item.style.display = "none"));
-
+site.classList.add("active");
+applications.classList.add("d-none");
+designs.classList.add("d-none");
+marketings.classList.add("d-none");
 site.addEventListener("click", () => {
-  sites.forEach((item) => (item.style.display = "flex"));
-  applications.forEach((item) => (item.style.display = "none"));
-  designs.forEach((item) => (item.style.display = "none"));
-  marketings.forEach((item) => (item.style.display = "none"));
+  sites.classList.remove("d-none");
+  applications.classList.add("d-none");
+  designs.classList.add("d-none");
+  marketings.classList.add("d-none");
 
   site.classList.add("active");
   application.classList.remove("active");
@@ -59,10 +58,10 @@ site.addEventListener("click", () => {
 });
 
 design.addEventListener("click", () => {
-  designs.forEach((item) => (item.style.display = "flex"));
-  applications.forEach((item) => (item.style.display = "none"));
-  sites.forEach((item) => (item.style.display = "none"));
-  marketings.forEach((item) => (item.style.display = "none"));
+  designs.classList.remove("d-none");
+  applications.classList.add("d-none");
+  sites.classList.add("d-none");
+  marketings.classList.add("d-none");
 
   design.classList.add("active");
   application.classList.remove("active");
@@ -71,10 +70,10 @@ design.addEventListener("click", () => {
 });
 
 application.addEventListener("click", () => {
-  applications.forEach((item) => (item.style.display = "flex"));
-  sites.forEach((item) => (item.style.display = "none"));
-  designs.forEach((item) => (item.style.display = "none"));
-  marketings.forEach((item) => (item.style.display = "none"));
+  applications.classList.remove("d-none");
+  sites.classList.add("d-none");
+  designs.classList.add("d-none");
+  marketings.classList.add("d-none");
 
   application.classList.add("active");
   site.classList.remove("active");
@@ -83,10 +82,10 @@ application.addEventListener("click", () => {
 });
 
 marketingdigital.addEventListener("click", () => {
-  marketings.forEach((item) => (item.style.display = "flex"));
-  applications.forEach((item) => (item.style.display = "none"));
-  designs.forEach((item) => (item.style.display = "none"));
-  sites.forEach((item) => (item.style.display = "none"));
+  marketings.classList.remove("d-none");
+  applications.classList.add("d-none");
+  designs.classList.add("d-none");
+  sites.classList.add("d-none");
 
   marketingdigital.classList.add("active");
   application.classList.remove("active");
