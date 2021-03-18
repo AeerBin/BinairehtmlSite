@@ -98,7 +98,7 @@ footer {
 }
 
 .footer-distributed .footer-center p a {
-  color: #5383d3;
+  color: #52b788;
   text-decoration: none;
 }
 
@@ -141,6 +141,9 @@ footer {
 
   margin-right: 3px;
   margin-bottom: 5px;
+}
+.footer-distributed .footer-icons a:hover {
+  background-color: #52b788;
 }
 
 @media (max-width: 880px) {

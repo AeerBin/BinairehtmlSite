@@ -94,7 +94,33 @@ marketingdigital.addEventListener("click", () => {
 });
 // End Menu transition
 
-//======= Start Pack ISOTOPE
+//======= Start SweetALert
+
+// function BinairDevisHero() {
+//   swal({
+//     title: "Multiple inputs",
+//     html:
+//       '<input id="nom" class="swal2-input" placeholder="Nom*" required>' +
+//       '<input id="entreprise" class="swal2-input" placeholder="Entreprise">' +
+//       '<input type="email" id="email" class="swal2-input" placeholder="Email*" required>' +
+//       '<input id="swal-input4" class="swal2-input">' +
+//       '<input id="swal-input4" class="swal2-input">',
+//     preConfirm: function () {
+//       return new Promise(function (resolve) {
+//         resolve([$("#swal-input1").val(), $("#swal-input2").val()]);
+//       });
+//     },
+//     onOpen: function () {
+//       $("#swal-input1").focus();
+//     },
+//   })
+//     .then(function (result) {
+//       swal(JSON.stringify(result));
+//     })
+//     .catch(swal.noop);
+// }
+
+//======= End SweetALert
 
 // $('.pack-item').isotope({
 

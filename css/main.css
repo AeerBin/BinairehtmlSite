@@ -235,7 +235,15 @@ header a {
   transition: 0.5s;
   cursor: pointer;
 }
-
+.bg-modal {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  z-index: 7;
+  overflow-y: hidden;
+}
 section {
   padding: 4em 2em;
   text-align: center;
@@ -514,6 +522,9 @@ footer p {
   .right {
     margin-left: 2em;
     margin-top: 1em;
+    border: 0.4px solid #69e8b5;
+    border-radius: 2em;
+    padding: 30px;
   }
   .metiers {
     margin-top: -5em;
@@ -727,7 +738,7 @@ footer p {
     position: relative;
   }
   .hero .content h1 {
-    font-size: 7em !important;
+    font-size: 5.5em !important;
   }
   .hero-design {
     display: unset;
