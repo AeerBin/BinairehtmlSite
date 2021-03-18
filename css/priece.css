@@ -150,6 +150,12 @@
   border-width: 90px 1411px 23px 399px;
   position: absolute;
 }
+.price-heading h1 {
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  font-size: xx-large;
+  font-weight: bold;
+}
 
 #generic_price_table
   .generic_content
@@ -322,6 +328,12 @@
 @media (max-width: 767px) {
   #generic_price_table .generic_content {
     margin-bottom: 75px;
+  }
+  .price-heading h1 {
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    font-size: x-large;
+    font-weight: bold;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
