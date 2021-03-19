@@ -136,7 +136,8 @@ header a {
 }
 
 .button-header,
-.hero-design {
+.hero-design,
+.hero-icons {
   display: none;
 }
 
@@ -235,7 +236,7 @@ header a {
   transition: 0.5s;
   cursor: pointer;
 }
-.bg-modal {
+/* .bg-modal {
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
@@ -243,7 +244,7 @@ header a {
   top: 0;
   z-index: 7;
   overflow-y: hidden;
-}
+} */
 section {
   padding: 4em 2em;
   text-align: center;
@@ -561,6 +562,7 @@ footer p {
     cursor: pointer;
     outline: none;
   }
+
   /* li:hover {
     background-color: #28265a;
     color: white;
@@ -713,6 +715,28 @@ footer p {
     letter-spacing: 1px;
     outline: none;
   }
+
+  .hero-icons {
+    display: unset;
+    margin-left: 145%;
+    margin-top: -45%;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: inherit;
+
+    font-size: 20px;
+
+    text-align: center;
+    line-height: 35px;
+  }
+  .hero-icons a {
+    color: #20a570;
+  }
+  .hero-icons a:hover {
+    background-color: #20a570;
+    color: white;
+  }
   .button-header button:hover {
     background-color: #52b788;
     color: white;
@@ -742,9 +766,9 @@ footer p {
   }
   .hero-design {
     display: unset;
-    margin-left: -51%;
-    margin-top: 11%;
-    width: 100%;
+    margin-left: -25%;
+    margin-top: 0%;
+    width: 50%;
     z-index: 1;
   }
   .puff-in-center {
