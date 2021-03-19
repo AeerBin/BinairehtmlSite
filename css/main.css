@@ -236,15 +236,63 @@ header a {
   transition: 0.5s;
   cursor: pointer;
 }
-/* .bg-modal {
+.bg-modal {
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
   top: 0;
+  justify-content: center;
+  align-items: center;
   z-index: 7;
-  overflow-y: hidden;
-} */
+  display: none;
+}
+.content-modal {
+  width: 80%;
+  height: 370px;
+  background-color: white;
+  z-index: 7;
+  border-radius: 10px;
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+}
+.content-modal h2 {
+  color: #1ba870;
+  /* letter-spacing: 0.5rem; */
+  font-size: bold;
+  margin-bottom: 10px;
+}
+.close-modal {
+  position: absolute;
+  top: 0;
+  right: 14px;
+  font-size: 34px;
+  color: #777373;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+.content-modal input,
+textarea {
+  width: 80%;
+  margin-bottom: 5px;
+}
+.content-modal textarea {
+  resize: none;
+  height: 40%;
+}
+.content-modal button {
+  width: 70%;
+  background-color: #1ba870;
+  color: white;
+  border-radius: 5px;
+  border: transparent;
+}
+.content-modal button:hover,
+.content-modal button:active {
+  background-color: #52b788;
+}
 section {
   padding: 4em 2em;
   text-align: center;

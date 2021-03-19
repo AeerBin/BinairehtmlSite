@@ -94,6 +94,20 @@ marketingdigital.addEventListener("click", () => {
 });
 // End Menu transition
 
+//======= Start Modal hero
+document
+  .getElementById("btn-devis-hero")
+  .addEventListener("click", function () {
+    document.querySelector(".bg-modal").style.display = "flex";
+    // document.body.style.height = "60vh";
+    document.body.style.position = "fixed";
+  });
+document.querySelector(".close-modal").addEventListener("click", function () {
+  document.querySelector(".bg-modal").style.display = "none";
+  document.body.style.position = "";
+});
+//======= End Modal hero
+
 //======= Start SweetALert
 
 // function BinairDevisHero() {
