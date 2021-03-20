@@ -1,3 +1,7 @@
+(function () {
+  // https://dashboard.emailjs.com/admin/integration
+  emailjs.init("YOUR_USER_ID");
+})();
 //======== Start Menu transition
 
 const mainmenu = document.querySelector(".binair-hamburger-menu");
@@ -107,6 +111,38 @@ document.querySelector(".close-modal").addEventListener("click", function () {
   document.body.style.position = "";
 });
 //======= End Modal hero
+//======= Start Mail js
+const heroForm = document.querySelector("#devis");
+heroForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  emailjs
+    .sendForm(
+      "Binair",
+      "template_fax6qbz",
+      e.target,
+      "user_gUHkY5pu5hUbFf1wHFlfY"
+    )
+    .then(
+      (result) => {
+        document.querySelector("#devis").reset();
+        document.querySelector(".bg-modal").style.display = "none";
+        document.body.style.position = "";
+        Swal.fire(
+          "Devie Envoyer!",
+          "Nous vous contacterons dans les plus brefs délais, \n merci d'avoir choisi Benier",
+          "success"
+        );
+      },
+      (error) => {
+        Swal.fire(
+          "Error d'envoi ",
+          "s'il te plaît contactez-nous par une autre méthode \n Merci",
+          "error"
+        );
+      }
+    );
+});
+//======= End Mail js
 
 //======= Start SweetALert
 
