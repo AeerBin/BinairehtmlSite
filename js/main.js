@@ -111,6 +111,7 @@ document.querySelector(".close-modal").addEventListener("click", function () {
   document.body.style.position = "";
 });
 //======= End Modal hero
+
 //======= Start Mail js
 const heroForm = document.querySelector("#devis");
 heroForm.addEventListener("submit", (e) => {

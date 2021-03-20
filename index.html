@@ -142,7 +142,7 @@
           <input name="name" type="text" placeholder="Nom*" required>
           <input name="company" type="text" placeholder="Entreprise">
           <input name="email" type="email" placeholder="E-mail*" required>
-          <input name="tel"  type="tel" placeholder="Telephone" minlength="10">
+          <input name="tel" id="tel"  type="tel" placeholder="Tel : (+212 or 0) 612345678" minlength="10" pattern="(\+212|0)([ \-_/]*)(\d[ \-_/]*){9}">
           <input name="object" type="text" placeholder="L'objet" required>
           <textarea name="msg" id="" cols="100" rows="5" placeholder="Votre message" required></textarea>
           <button type="submit">Envoyer</button>
