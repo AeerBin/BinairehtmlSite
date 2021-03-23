@@ -397,7 +397,9 @@ section {
   place-content: center;
   width: 100%;
 }
-
+.CustomClass {
+  font-size: 1.5rem !important;
+}
 .pack-item div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -555,6 +557,10 @@ footer p {
     float: left;
     width: 150px;
     outline-style: none;
+  }
+
+  .content-modal {
+    width: 40%;
   }
   .realisation {
     text-align: left;
@@ -982,6 +988,9 @@ footer p {
   .btn-pack.trois {
     border-color: #28265a;
     background-color: #28265a;
+  }
+  .devisInput {
+    font-size: 4rem !important;
   }
 }
 /*# sourceMappingURL=main.css.map */

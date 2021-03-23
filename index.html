@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/button.css" />
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7"></script>
   </head>
   <body>
     <div class="nav-container">
@@ -142,7 +142,7 @@
           <input name="name" type="text" placeholder="Nom*" required>
           <input name="company" type="text" placeholder="Entreprise">
           <input name="email" type="email" placeholder="E-mail*" required>
-          <input name="tel" id="tel"  type="tel" placeholder="Tel : (+212 or 0) 612345678" minlength="10" pattern="(\+212|0)([ \-_/]*)(\d[ \-_/]*){9}">
+          <input name="tel" id="tel"  type="tel" placeholder="Tel" minlength="10" pattern="(\+212|0|+33|+49|+1|+34)([ \-_/]*)(\d[ \-_/]*){9}">
           <input name="object" type="text" placeholder="L'objet" required>
           <textarea name="msg" id="" cols="100" rows="5" placeholder="Votre message" required></textarea>
           <button type="submit">Envoyer</button>
@@ -319,12 +319,13 @@
               </div>
             </div>
           </div>
-          <div class="container">
+          <div class="container pack-product">
             <!--BLOCK ROW START-->
             <div class="row siteRow">
               <div class="col-md-4">
                 <!--PRICE CONTENT START-->
                 <div class="generic_content clearfix">
+                  <p class="hide-product-selection d-none">Site Basic</p>
                   <!--HEAD PRICE DETAIL START-->
                   <div class="generic_head_price clearfix">
                     <!--HEAD CONTENT START-->
@@ -366,7 +367,7 @@
 
                   <!--BUTTON START-->
                   <div class="generic_price_btn clearfix">
-                    <a class="" href="">Devis</a>
+                    <a class="a-devis test" >Devis</a>
                   </div>
                   <!--//BUTTON END-->
                 </div>
@@ -376,6 +377,8 @@
               <div class="col-md-4 ">
                 <!--PRICE CONTENT START-->
                 <div class="generic_content active clearfix">
+                                    <p class="hide-product-selection d-none">Site Standard</p>
+
                   <!--HEAD PRICE DETAIL START-->
                   <div class="generic_head_price clearfix">
                     <!--HEAD CONTENT START-->
@@ -427,6 +430,8 @@
               <div class="col-md-4">
                 <!--PRICE CONTENT START-->
                 <div class="generic_content clearfix">
+                                    <p class="hide-product-selection d-none">Site Business</p>
+
                   <!--HEAD PRICE DETAIL START-->
                   <div class="generic_head_price clearfix">
                     <!--HEAD CONTENT START-->
@@ -998,7 +1003,7 @@
     <!-- Javascript Librairies -->
     <script src="lib/jquery/jquery.min.js"></script>
     <script src="lib/jquery/jquery-migrate.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7"></script>
+
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.0/dist/email.min.js"></script>
     <!-- Javascript-->
     <script src="js/main.js"></script>

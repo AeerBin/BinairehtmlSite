@@ -121,7 +121,7 @@ heroForm.addEventListener("submit", (e) => {
       "Binair",
       "template_fax6qbz",
       e.target,
-      "user_gUHkY5pu5hUbFf1wHFlfY"
+      "user_gUHkY5pu5hUbFf1wHFlfY."
     )
     .then(
       (result) => {
@@ -129,8 +129,8 @@ heroForm.addEventListener("submit", (e) => {
         document.querySelector(".bg-modal").style.display = "none";
         document.body.style.position = "";
         Swal.fire(
-          "Devie Envoyer!",
-          "Nous vous contacterons dans les plus brefs délais, \n merci d'avoir choisi Benier",
+          "Devis Envoyé ",
+          "Nous vous contacterons dans les plus brefs délais, \n Merci pour votre confiance ",
           "success"
         );
       },
@@ -143,7 +143,57 @@ heroForm.addEventListener("submit", (e) => {
       }
     );
 });
+
 //======= End Mail js
+
+//======= Start modal pack selection
+let packContent = document.querySelector(".pack-product");
+
+let devisPack = document.querySelectorAll(".generic_price_btn.clearfix");
+
+packContent.addEventListener("click", function (e) {
+  let classes = e.target.classList;
+  let array = [...classes];
+  if (array.includes("a-devis")) {
+    let devisSibling =
+      e.target.parentElement.parentElement.children[0].innerHTML;
+    Swal.fire({
+      icon: "info",
+      html: `  
+      
+      <div >
+        <h2>Demande de devis</h2>
+        <form  id="devisPack" action="">
+          <div class="form-group">
+            <input type="text" class="form-control devisInput"  placeholder="">
+          </div>
+          <div class="form-group">    
+            <input type="text" class="form-control" placeholder="">
+          </div>
+          <div class="form-group">    
+            <input type="text" class="form-control" placeholder="">
+          </div>
+          <div class="form-group">    
+            <input type="text" class="form-control" placeholder="">
+          </div>
+          <div class="form-group">    
+            <input type="text" class="form-control" placeholder="">
+          </div>
+          <div class="form-group">
+           <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+           </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>`,
+      showCloseButton: true,
+      showCancelButton: false,
+      focusConfirm: false,
+      showConfirmButton: false,
+      width: "60%",
+    });
+  }
+});
+//======= End modal pack selection
 
 //======= Start SweetALert
 
