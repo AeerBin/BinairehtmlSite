@@ -121,23 +121,19 @@ heroForm.addEventListener("submit", (e) => {
       "Binair",
       "template_fax6qbz",
       e.target,
-      "user_gUHkY5pu5hUbFf1wHFlfY."
+      "user_gUHkY5pu5hUbFf1wHFlfY"
     )
     .then(
       (result) => {
         document.querySelector("#devis").reset();
         document.querySelector(".bg-modal").style.display = "none";
         document.body.style.position = "";
-        Swal.fire(
-          "Devis Envoyé ",
-          "Nous vous contacterons dans les plus brefs délais, \n Merci pour votre confiance ",
-          "success"
-        );
+        Swal.fire("Devis Envoyé !", "", "success");
       },
       (error) => {
         Swal.fire(
           "Error d'envoi ",
-          "s'il te plaît contactez-nous par une autre méthode \n Merci",
+          "Merci de nous contacter par e-mail",
           "error"
         );
       }
