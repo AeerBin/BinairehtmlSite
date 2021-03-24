@@ -158,27 +158,27 @@ packContent.addEventListener("click", function (e) {
       html: `  
       
       <div >
-        <h2>Demande de devis</h2>
-        <form  id="devisPack" action="">
+        <h2 class="">Demande de devis</h2>
+        <form  id="formDevis" action="">
           <div class="form-group">
-            <input type="text" class="form-control devisInput"  placeholder="">
+            <input type="text" name="name" class="form-control devisInput"  placeholder="nom" required>
           </div>
           <div class="form-group">    
-            <input type="text" class="form-control" placeholder="">
+            <input type="text" name="company" class="form-control devisInput" placeholder="company" required>
           </div>
           <div class="form-group">    
-            <input type="text" class="form-control" placeholder="">
+            <input type="email" name="email" class="form-control devisInput" placeholder="email" required>
           </div>
           <div class="form-group">    
-            <input type="text" class="form-control" placeholder="">
+            <input name="tel" type="Tel" class="form-control devisInput" placeholder="Tel" minlength="10" pattern="${"(\\+212|0|+33|+49|+1|+34)([ \\-_/]*)(d[ \\-_/]*){9}"}">
           </div>
           <div class="form-group">    
-            <input type="text" class="form-control" placeholder="">
+            <input name="object" type="text" class="form-control devisInput" placeholder="" readonly value="${devisSibling}">
           </div>
           <div class="form-group">
-           <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+           <textarea name="msg" class="form-control  devisInput" id="exampleFormControlTextarea1" rows="5" required></textarea>
            </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-primary  devisInput">Submit</button>
         </form>
       </div>`,
       showCloseButton: true,
@@ -187,8 +187,38 @@ packContent.addEventListener("click", function (e) {
       showConfirmButton: false,
       width: "60%",
     });
+    let devisForm = document.querySelector("#formDevis");
+
+    devisForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      emailjs
+        .sendForm(
+          "Binair",
+          "template_fax6qbz",
+          e.target,
+          "user_gUHkY5pu5hUbFf1wHFlfY"
+        )
+        .then(
+          (result) => {
+            document.querySelector("#devis").reset();
+            document.querySelector(".bg-modal").style.display = "none";
+            document.body.style.position = "";
+            Swal.fire("Devis Envoyé !", "", "success");
+          },
+          (error) => {
+            Swal.fire(
+              "Error d'envoi ",
+              "Merci de nous contacter par e-mail",
+              "error"
+            );
+          }
+        );
+    });
   }
 });
+
+let youCanDeleteMe;
 //======= End modal pack selection
 
 //======= Start SweetALert
