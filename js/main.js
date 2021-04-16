@@ -158,27 +158,27 @@ packContent.addEventListener("click", function (e) {
       html: `  
       
       <div >
-        <h2 class="">Demande de devis</h2>
+        <h2 class="" style="color:#1ba870; margin-bottom:10px"">Demande de devis</h2>
         <form  id="formDevis" action="">
           <div class="form-group">
-            <input type="text" name="name" class="form-control devisInput"  placeholder="nom" required>
+            <input style="box-shadow:none; border:1px solid #69e8b5" type="text" name="name" class="form-control devisInput"  placeholder="Nom*" required>
           </div>
           <div class="form-group">    
-            <input type="text" name="company" class="form-control devisInput" placeholder="company" required>
+            <input style="box-shadow:none; border:1px solid #69e8b5" type="text" name="company" class="form-control devisInput" placeholder="Entreprise">
           </div>
           <div class="form-group">    
-            <input type="email" name="email" class="form-control devisInput" placeholder="email" required>
+            <input style="box-shadow:none; border:1px solid #69e8b5" type="email" name="email" class="form-control devisInput" placeholder="Email*" required>
           </div>
           <div class="form-group">    
-            <input name="tel" type="Tel" class="form-control devisInput" placeholder="Tel" minlength="10" pattern="${"(\\+212|0|+33|+49|+1|+34)([ \\-_/]*)(d[ \\-_/]*){9}"}">
+            <input style="box-shadow:none; border:1px solid #69e8b5" name="tel" type="Tel" class="form-control devisInput" placeholder="Tel" minlength="10" pattern="${"(\\+212|0|+33|+49|+1|+34)([ \\-_/]*)(d[ \\-_/]*){9}"}">
           </div>
           <div class="form-group">    
-            <input name="object" type="text" class="form-control devisInput" placeholder="" readonly value="${devisSibling}">
+            <input style="box-shadow:none; border:1px solid #B1B1B1" name="object" type="text" class="form-control devisInput" placeholder="" readonly value="${devisSibling}">
           </div>
           <div class="form-group">
-           <textarea name="msg" class="form-control  devisInput" id="exampleFormControlTextarea1" rows="5" required></textarea>
+           <textarea style="box-shadow:none; resize:none; border:1px solid #69e8b5" name="msg" class="form-control  devisInput" id="exampleFormControlTextarea1" rows="5" placeholder="Merci de saisir votre demande" required></textarea>
            </div>
-          <button type="submit" class="btn btn-primary  devisInput">Submit</button>
+          <button type="submit" class="btn btn-primary  devisInput" style="border:none; background-color: #1ba870">Envoyer</button>
         </form>
       </div>`,
       showCloseButton: true,
