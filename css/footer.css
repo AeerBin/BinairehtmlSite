@@ -149,7 +149,7 @@ footer {
 @media (max-width: 880px) {
   .footer-distributed {
     font: bold 14px sans-serif;
-    height: 100vh;
+    height: 110vh;
   }
   .footer-distributed h3 img {
     width: 40%;

@@ -349,7 +349,24 @@ section {
   border: 1px solid #69e8b5;
   margin-bottom: 1em;
 }
+#applications-mobiles {
+  background-color: #04dc86;
+}
 
+.subtitle2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #28265a;
+  letter-spacing: 0.3em;
+  font-size: 0.9em;
+}
+.realisation-title2 {
+  color: white;
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-top: 0.4em;
+  display: block;
+}
 .metier-container ul li .icon-container {
   height: 100px;
   display: -ms-grid;
@@ -415,7 +432,9 @@ section {
   margin: 1em 1em;
   width: 66%;
 }
-
+.metier-container a {
+  text-decoration: none;
+}
 .pack-item div.one {
   border-color: #04dc86;
 }
@@ -579,6 +598,12 @@ footer p {
     margin-top: 1em;
     border: 0.4px solid #69e8b5;
     border-radius: 2em;
+    padding: 30px;
+  }
+  .right2 {
+    margin-left: 2em;
+    margin-top: 1em;
+
     padding: 30px;
   }
   .metiers {
@@ -882,22 +907,7 @@ footer p {
     cursor: pointer;
     outline: none;
   }
-  /* li:hover {
-    background-color: #28265a;
-    color: white;
-    border: 1px solid #28265a;
-  }
-  li:active {
-    background-color: #28265a;
-    opacity: 0.4;
-    color: white;
-    border: 1px solid #28265a;
-  }
-  li.active {
-    background-color: #28265a;
-    color: white;
-    border: 1px solid #28265a;
-  } */
+
   .pack-container {
     display: inline;
   }
