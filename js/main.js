@@ -113,7 +113,7 @@ document.querySelector(".close-modal").addEventListener("click", function () {
 //======= End Modal hero
 
 //======= Start Mail js
-let heroForm = document.querySelector("#devis");
+const heroForm = document.querySelector("#devis");
 heroForm.addEventListener("submit", (e) => {
   e.preventDefault();
   emailjs
@@ -140,32 +140,6 @@ heroForm.addEventListener("submit", (e) => {
     );
 });
 
-let designForm = document.querySelector("#devisdesign");
-heroForm.addEventListener("submit", (e) => {
-  e.preventDefault();
-  emailjs
-    .sendForm(
-      "Binair",
-      "template_fax6qbz",
-      e.target,
-      "user_gUHkY5pu5hUbFf1wHFlfY"
-    )
-    .then(
-      (result) => {
-        document.querySelector("#devis").reset();
-        document.querySelector(".bg-modal").style.display = "none";
-        document.body.style.position = "";
-        Swal.fire("Devis Envoyé !", "", "success");
-      },
-      (error) => {
-        Swal.fire(
-          "Error d'envoi ",
-          "Merci de nous contacter par e-mail",
-          "error"
-        );
-      }
-    );
-});
 //======= End Mail js
 
 //======= Start modal pack selection
