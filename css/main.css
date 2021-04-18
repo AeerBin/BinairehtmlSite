@@ -215,7 +215,9 @@ header a {
     opacity: 1;
   }
 }
-
+.circle {
+  border-radius: 50px;
+}
 .button-devis button {
   border: 3px solid white;
   border-radius: 20px;
@@ -606,6 +608,10 @@ footer p {
 
     padding: 30px;
   }
+  .circle {
+    border-radius: 50px;
+  }
+
   .metiers {
     margin-top: -5em;
     padding-top: 7em;
