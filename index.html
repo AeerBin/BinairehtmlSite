@@ -3,7 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BeenAir | Agence de communication - Rabat</title>
+    <title>Binair | Agence de communication web - Rabat</title>
+    <meta name="description" content="Agence de communication basée à Rabat. 
+    Agence web spécialiséé dans le développement web, le web design, le marketing digital, 
+    et les applications mobiles basée à Rabat">
+    <!-- facebook card -->
+    <meta property="og:url" content={siteUrl} />
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content={siteTitle} />
+      <meta property="og:description" content={siteDesc} />
+      <meta property="og:image" content={${siteUrl}${image}} />
+      <meta property="og:image:width" content="400" />
+      <meta property="og:image:height" content="400" />
+
+      
+      <!-- {/* twitter  card */} -->
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:creator" content={twiterUsername} />
+      <meta name="twitter:title" content={siteTitle} />
+      <meta name="twitter:description" content={siteDesc} />
+      <meta name="twitter:image" content={${siteUrl}${image}} />
+
+      <!-- {/* Linkedin */} -->
+      <meta property="og:title" content={siteTitle} />
+      <meta property="og:image" content={${siteUrl}${image}} />
+      <meta property="og:description" content={siteDesc} />
+      <meta property="og:url" content={siteUrl} />
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/favicon.png" />
     <!-- CSS -->
@@ -21,6 +46,7 @@
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/button.css" />
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7"></script>
+
   </head>
   <body>
     <div class="nav-container">
@@ -29,13 +55,16 @@
           ><img
             class="logo"
             src="images/icons/Binair-logo-horizontal.png"
-            alt=""
+            alt="Logo-binair-horizontal"
+             title="Logo-binair-horizontal"
+
         /></a>
         <!-- add hamburger menu -->
         <img
           class="binair-hamburger-menu rotate-in-center"
           src="images/icons/beenair-menu.png"
-          alt=""
+          alt="menu-binair"
+          title="menu-binair"
         />
       </header>
       <div class="button-header">
@@ -128,6 +157,7 @@
           class="right transition2"
           src="images/binaire-Réalisation.JPG"
           alt="binaire-projet"
+           title="binaire-projet"
         />
       </section>
 
@@ -142,7 +172,8 @@
               <div class="icon-container one">
                 <img
                   src="images/icons/Coding-icon.png"
-                  alt="Binaire-developpement"
+                  alt="Binair-developpement"
+                  title="Binair-developpement"
                 />
               </div>
               <p class="metier-title">Développement</p>
@@ -158,7 +189,8 @@
               <div class="icon-container two">
                 <img
                   src="images/icons/Design-icon.png"
-                  alt="Binaire-developpement"
+                  alt="Binair-design"
+                  title="Binair-design"
                 />
               </div>
               <p class="metier-title">Design</p>
@@ -174,7 +206,8 @@
               <div class="icon-container three">
                 <img
                   src="images/icons/Marketing-icon.png"
-                  alt="Binaire-developpement"
+                  alt="Binaire-Marketing"
+                  title="Binaire-Marketing"
                 />
               </div>
               <p class="metier-title">Marketing digital</p>
@@ -903,7 +936,7 @@
  
 		<div class="footer-left">
  
-		<h3 id="contact-binair"><img src="images/icons/Binair-logo-horizontal.png" alt="Binair"></h3>
+		<h3 id="contact-binair"><img src="images/icons/Binair-logo-horizontal.png" alt="Binair" title="Binair"></h3>
  
 		<p class="footer-links">
 		<a href="index.html">Home</a>
